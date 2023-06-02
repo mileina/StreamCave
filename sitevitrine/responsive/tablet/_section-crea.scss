@@ -1,0 +1,33 @@
+/* Tablettes */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Section creation */
+  .section-crea {
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .crea-text-section,
+  .crea-image {
+    width: 60%;
+  }
+
+  .crea-text-section h1 {
+    font-size: 1.5rem;
+    /* 24px */
+  }
+
+  .crea-subtitle h2 {
+    font-size: 1.25rem;
+    /* 20px */
+  }
+
+  .crea-subtitle p {
+    font-size: 1rem;
+    /* 16px */
+  }
+
+  .crea-image img {
+    max-width: 80%;
+  }
+}

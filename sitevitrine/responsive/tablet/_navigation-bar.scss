@@ -1,0 +1,44 @@
+/* Format tablette */
+@media (min-width: 768px) {
+    .navigation-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.625rem 1.25rem;
+        /* 10px 20px */
+        background-color: #2F918F;
+        color: white;
+    }
+
+    .navigation-bar .logo {
+        font-family: "MarkW01-Heavy";
+        font-size: 1.25rem;
+        /* 20px */
+    }
+
+    .navigation-bar .menu-toggle {
+        display: none;
+    }
+
+    .navigation-bar .menu-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navigation-bar .menu-item {
+        margin-left: 1.25rem;
+        /* 20px */
+    }
+
+    .navigation-bar .menu-item:first-child {
+        margin-left: 0;
+    }
+
+    .navigation-bar .menu-link {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        /* 16px */
+    }
+}

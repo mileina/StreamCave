@@ -1,0 +1,9 @@
+/* Format tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .platform-section {
+    padding: 3.125rem 1.25rem;
+    /* 50px 20px */
+    margin: 0 1.25rem 1.875rem 1.25rem;
+    /* 0 20px 30px 20px */
+  }
+}

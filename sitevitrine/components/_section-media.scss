@@ -1,0 +1,144 @@
+.title-container {
+    text-align: center;
+    margin-bottom: 3.125rem; /* 50px */
+}
+
+.media-title {
+    font-family: "MarkW01-Heavy";
+    color: #2F918F;
+    font-size: 1.5rem; /* 24px */
+}
+
+.media-subtitle {
+    font-family: "MarkW01-Heavy";
+    color: #2F918F;
+    font-size: 1.25rem; /* 20px */
+}
+
+.section-media {
+    padding: 3.125rem 0; /* 50px */
+    margin: 1.875rem 6.25rem;
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.rectangle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 1.25rem; /* 20px */
+    flex: 1;
+}
+
+.rectangle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #2F918F, #ff8a00);
+    border: 2px solid black;
+    padding: 1.25rem; /* 20px */
+    margin-bottom: 1.25rem; /* 20px */
+    height: 100%;
+    border-radius: 1.25rem; /* 20px */
+}
+
+.rectangle:last-child {
+    margin-bottom: 0;
+}
+
+.rectangle-image {
+    text-align: center;
+    height: 100%;
+}
+
+.rectangle-img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem; /* 20px */
+}
+
+.rectangle-content {
+    text-align: center;
+}
+
+.ratings {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.625rem; /* 10px */
+    background-color: white;
+    border: none;
+    padding: 0.625rem; /* 10px */
+}
+
+.rating-number {
+    font-family: "MarkW01-Heavy";
+    color: #2F918F;
+    margin-right: 0.3125rem; /* 5px */
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    display: inline-block;
+    width: 1rem; /* 16px */
+    height: 1rem; /* 16px */
+    color: #2F918F;
+    margin-right: 0.1875rem; /* 3px */
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    margin: 0.625rem 0 0 0.625rem; /* 10px */
+}
+
+.feature {
+    display: inline-block;
+    margin: 0 0.625rem 0.625rem 0;
+    padding: 0.3125rem 0.625rem; /* 5px 10px */
+    border: 1px solid #2F918F;
+    border-radius: 1.25rem; /* 20px */
+    color: #2F918F;
+}
+
+.rectangle-right {
+    height: calc((200px + 307px) * 2); 
+    width: calc(50% - 60px); 
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 3.125rem; /* 50px */
+}
+
+.see-more-btn {
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    font-family: "MarkW01-Heavy";
+    color: #FFFFFF;
+    background-color: #2F918F;
+    border: none;
+    border-radius: 0.3125rem; /* 5px */
+    cursor: pointer;
+    font-size: 1rem; /* 16px */
+    transition: background-color 0.3s ease;
+}
+
+.see-more-btn:hover {
+    background-color: #216766;
+}
+
+#app-section .download-section .download-gif img {
+    width: 50rem;
+    height: 31.25rem;
+    float: left;
+    margin-right: 1.875rem;
+}

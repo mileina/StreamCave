@@ -1,0 +1,14 @@
+/* Format mobile */
+@media (max-width: 767px) {
+  .platform-section {
+    margin-top: -1.25rem; // -20px
+    padding: 3.125rem 1.25rem; // 50px 20px
+    margin: 0 1.25rem 1.875rem 1.25rem; // 0 20px 30px 20px
+    order: 4;
+  }
+
+  .platform-section .platform-logos img {
+    width: 2rem;
+
+  }
+}

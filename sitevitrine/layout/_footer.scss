@@ -1,0 +1,73 @@
+/* Pied de page */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 1.25rem;
+    /* 20px */
+    font-family: "Aeroport";
+}
+
+.footer-container {
+    margin: 0 6.25rem;
+    /* 100px */
+    font-family: "Aeroport";
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.875rem;
+    /* 30px */
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 1.25rem;
+    /* 20px */
+}
+
+.footer-section h3 {
+    font-size: 1.25rem;
+    /* 20px */
+    font-family: "MarkW01-Heavy";
+    margin-bottom: 0.625rem;
+    /* 10px */
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-list {
+    display: none;
+    padding: 0;
+}
+
+.dropdown-list.open {
+    display: block;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.3125rem;
+    /* 5px */
+    text-align: left;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid white;
+    padding-top: 1.25rem;
+    /* 20px */
+}

@@ -1,0 +1,29 @@
+.platform-section {
+    background-color: #000000;
+    color: #2F918F;
+    text-align: center;
+    padding: 3.125rem 6.25rem;
+    /* 50px 100px */
+    margin: -2.4rem 6.25rem 1.875rem 6.25rem;
+    /* -20px 100px 30px 100px */
+
+    .platform-title {
+        margin-top: 0.625rem;
+        /* 10px */
+        font-family: "MarkW01-Heavy";
+    }
+
+    .platform-logos {
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+        /* 20px */
+        margin-top: 1.25rem;
+        /* 20px */
+
+        img {
+            width: 3.125rem;
+            /* 50px */
+        }
+    }
+}

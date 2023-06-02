@@ -1,0 +1,31 @@
+/* CSS pour la section finale sur mobile */
+@media (max-width: 767px) {
+    .final-section {
+        padding: 1.875rem;
+        /* 30px */
+        text-align: center;
+
+        .final-title {
+            color: #2F918F;
+            font-family: "MarkW01-Heavy";
+            font-size: 1.5rem;
+            /* 24px */
+            margin-bottom: 1.25rem;
+            /* 20px */
+        }
+
+        .final-text {
+            color: #000000;
+            font-family: "Aeroport";
+            font-size: 1rem;
+            /* 16px */
+            margin-bottom: 1.25rem;
+            /* 20px */
+        }
+
+        .final-button {
+            margin-top: 1.25rem;
+            /* 20px */
+        }
+    }
+}

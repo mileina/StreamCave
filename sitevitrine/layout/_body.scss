@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin-bottom: 1rem;
+}
+
+section {
+  padding: 20rem;
+}
+
+.diamond2 {
+  width: 50rem;
+  /* 500px */
+  height: 50rem;
+  /* 500px */
+  margin-top: -30rem;
+  /* -350px */
+  margin-left: 52.4rem;
+  /* 400px */
+  background: #FA8A03;
+  position: absolute;
+  left: 0;
+  transform: rotate(45deg);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.diamond3 {
+  margin-right: 40rem;
+  /* 600px */
+  margin-top: 20rem;
+  /* 200px */
+  width: 40rem;
+  /* 500px */
+  height: 40rem;
+  /* 500px */
+  background: #618F6C;
+  position: absolute;
+  right: 0;
+  transform: rotate(45deg);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.download-gif {
+  width: 100%;
+  max-width: 50rem;
+}
+
+.diamond-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app-section .app-content,
+#app-section .download-section {
+  position: relative;
+}

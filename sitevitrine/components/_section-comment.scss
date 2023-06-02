@@ -1,0 +1,80 @@
+.section-comment {
+    background-color: black;
+    padding: 3.125rem;
+    /* 50px */
+    position: relative;
+
+    .comment-title {
+        font-family: "MarkW01-Heavy";
+        color: #2F918F;
+        font-size: 1.5rem;
+        /* 24px */
+        text-align: center;
+        margin-bottom: 1.875rem;
+        /* 30px */
+    }
+
+    .comment-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+        .comment {
+            text-align: center;
+            margin-top: 1.25rem;
+            /* 20px */
+
+            img {
+                width: 6.25rem;
+                /* 100px */
+                height: 6.25rem;
+                /* 100px */
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .arrow-container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &.arrow-left {
+            left: 31.25rem;
+            /* 500px */
+        }
+
+        &.arrow-right {
+            right: 31.25rem;
+            /* 500px */
+        }
+
+        .arrow {
+            width: 3.125rem;
+            /* 50px */
+            height: 3.125rem;
+            /* 50px */
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:before {
+                content: "\2039";
+                color: black;
+                font-size: 1.875rem;
+                /* 30px */
+            }
+        }
+
+        &.arrow-right .arrow:before {
+            content: "\203A";
+        }
+    }
+}

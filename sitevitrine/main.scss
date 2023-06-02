@@ -1,0 +1,51 @@
+@import 'base/_variables';
+@import 'base/_mixins';
+@import 'components/_app-section';
+@import 'components/_download-section';
+@import 'components/_section-crea';
+@import 'components/_section-media';
+@import 'components/_section-comment';
+@import 'components/_main-section';
+@import 'components/_platform-section';
+@import 'components/_faq-section';
+@import 'components/_links-section';
+@import 'components/_final-section';
+@import 'layout/_footer';
+@import 'layout/_navigation-bar';
+@import 'layout/_body';
+
+// Styles pour les écrans de bureau (desktop)
+@import 'responsive/desktop/_app-section';
+@import 'responsive/desktop/_section-crea';
+@import 'responsive/desktop/_section-media';
+@import 'responsive/desktop/_section-comment';
+@import 'responsive/desktop/_main-section';
+
+// Styles pour les tablettes
+@import 'responsive/tablet/_body';
+@import 'responsive/tablet/_app-section';
+@import 'responsive/tablet/_download-section';
+@import 'responsive/tablet/_section-crea';
+@import 'responsive/tablet/_section-media';
+@import 'responsive/tablet/_section-comment';
+@import 'responsive/tablet/_main-section';
+@import 'responsive/tablet/_platform-section';
+@import 'responsive/tablet/_footer';
+@import 'responsive/tablet/_navigation-bar';
+
+// Styles pour les appareils mobiles
+@import 'responsive/mobile/_app-section';
+@import 'responsive/mobile/_body';
+@import 'responsive/mobile/_download-section';
+@import 'responsive/mobile/_faq-section';
+@import 'responsive/mobile/_footer';
+@import 'responsive/mobile/_links-section';
+@import 'responsive/mobile/_main-section';
+@import 'responsive/mobile/_platform-section';
+@import 'responsive/mobile/_section-comment';
+@import 'responsive/mobile/_section-crea';
+@import 'responsive/mobile/_section-media';
+
+// Police
+@import 'police/Mark\ W01\ Heavy.ttf';
+@import 'police/Aeroport.otf';

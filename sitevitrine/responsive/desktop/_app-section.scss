@@ -1,0 +1,117 @@
+/* Ordinateurs Portables */
+@media (min-width: 992px) {
+
+  /* Section application */
+  #app-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.125rem 0;
+    /* 50px */
+    margin: 1.875rem 3.125rem;
+    /* 30px 50px */
+    margin-bottom: 0;
+  }
+
+  .app-content {
+    text-align: center;
+    margin-bottom: 1.875rem;
+    /* 30px */
+  }
+
+  .app-title {
+    color: #2F918F;
+    font-family: "MarkW01-Heavy";
+    font-size: 1.875rem;
+    /* 30px */
+    margin-bottom: 1.25rem;
+    /* 20px */
+  }
+
+  .app-text {
+    color: #000000;
+    font-family: "Aeroport";
+    font-size: 1.25rem;
+    /* 20px */
+    max-width: 37.5rem;
+    /* 600px */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .app-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+
+  .app-button {
+    cursor: pointer;
+    margin: 0 0.625rem;
+    /* 10px */
+    position: relative;
+  }
+
+  .app-button img {
+    width: 6.25rem;
+    /* 100px */
+    height: auto;
+    transition: opacity 0.3s;
+  }
+
+  .app-button:hover img {
+    opacity: 0.7;
+  }
+
+  .app-button::after {
+    content: "";
+    position: absolute;
+    bottom: -0.3125rem;
+    /* -10px */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0.125rem;
+    /* 2px */
+    background-color: #2F918F;
+    transition: width 0.3s;
+  }
+
+  .app-button:hover::after {
+    width: 2.75rem;
+    /* 44px */
+  }
+
+  .download-text-content {
+    text-align: center;
+    margin-left: 3.125rem;
+    /* 50px */
+  }
+
+  .download-text-content p {
+    color: black;
+    font-family: "Aeroport";
+    font-size: 1.25rem;
+    /* 20px */
+  }
+
+  .btn-download {
+    background-color: #2F918F;
+    color: white;
+    border-radius: 0.3125rem;
+    /* 5px */
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+    border: none;
+    cursor: pointer;
+  }
+
+  #app-section .download-section .download-gif img {
+    width: 100%;
+    height: auto;
+    padding-right: 0px;
+    float: left;
+  }
+}

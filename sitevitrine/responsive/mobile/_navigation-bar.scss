@@ -1,0 +1,48 @@
+/* CSS pour la barre de navigation sur mobile */
+@media (max-width: 767px) {
+    .navigation-bar {
+        padding: 10px;
+        background-color: #2F918F;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .menu-toggle {
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-item {
+        margin: 10px 0;
+    }
+
+    .menu-item a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-item a:hover {
+        text-decoration: underline;
+    }
+
+    .menu-toggle.open~.menu {
+        display: block;
+    }
+
+    .navbar .btn.btn-download {
+        margin-bottom: 15px;
+    }
+}

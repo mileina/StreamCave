@@ -1,0 +1,48 @@
+#section-outdoor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 3.125rem;
+  /* 50px */
+}
+
+.blog-square {
+  flex: 1;
+  margin: 0 0.625rem;
+  /* 0 10px */
+}
+
+.square-content {
+  height: 18.75rem;
+  /* 300px */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 1.25rem;
+  /* 20px */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  img {
+    width: 9.375rem;
+    /* 150px */
+    height: 9.375rem;
+    /* 150px */
+    margin-bottom: 0.625rem;
+    /* 10px */
+  }
+
+  .square-text {
+    font-family: "Aeroport", sans-serif;
+    font-size: 1rem;
+    /* 16px */
+    line-height: 1.5;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}

@@ -1,0 +1,1673 @@
+@charset "UTF-8";
+/* Variables */
+/* Mixins */
+#app-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.125rem 0;
+  /* 50px */
+  margin: 1.875rem 6.25rem;
+  /* 30px 100px */
+  margin-bottom: 0; }
+  #app-section .app-img {
+    max-height: 6.25rem;
+    /* 100px */
+    width: auto; }
+  #app-section .app-content {
+    text-align: center;
+    margin-bottom: 1.875rem;
+    /* 30px */ }
+    #app-section .app-content .app-title {
+      color: #2F918F;
+      font-family: "MarkW01-Heavy";
+      font-size: 1.875rem;
+      /* 30px */
+      margin-bottom: 1.25rem;
+      /* 20px */ }
+    #app-section .app-content .app-text {
+      color: #000000;
+      font-family: "Aeroport";
+      font-size: 1.25rem;
+      /* 20px */
+      max-width: 37.5rem;
+      /* 600px */
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; }
+  #app-section .app-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0; }
+    #app-section .app-buttons .app-button {
+      cursor: pointer;
+      margin: 0 0.625rem;
+      /* 0 10px */
+      position: relative; }
+      #app-section .app-buttons .app-button img {
+        width: 6.25rem;
+        /* 100px */
+        height: auto;
+        transition: opacity 0.3s; }
+      #app-section .app-buttons .app-button:hover img {
+        opacity: 0.7; }
+      #app-section .app-buttons .app-button::after {
+        content: "";
+        position: absolute;
+        bottom: -0.625rem;
+        /* -10px */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0.125rem;
+        /* 2px */
+        background-color: #2F918F;
+        transition: width 0.3s; }
+      #app-section .app-buttons .app-button:hover::after {
+        width: 2rem;
+        /* 32px */ }
+    #app-section .app-buttons .btn-download {
+      background-color: #2F918F;
+      color: white;
+      border-radius: 0.3125rem;
+      /* 5px */
+      padding: 1.25rem 2.5rem;
+      /* 20px 40px */
+      border: none;
+      cursor: pointer;
+      font-family: "Aeroport";
+      font-size: 1.25rem;
+      /* 20px */
+      transition: background-color 0.3s; }
+      #app-section .app-buttons .btn-download:hover {
+        background-color: #216766; }
+  #app-section .app-section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #app-section .app-section .app-gif img {
+      width: 50%;
+      /* 50% */
+      height: auto; }
+    #app-section .app-section .app-text-content {
+      text-align: center;
+      margin-left: 0; }
+      #app-section .app-section .app-text-content p {
+        color: #000000;
+        font-family: "Aeroport";
+        font-size: 1.25rem;
+        /* 20px */
+        max-width: 37.5rem;
+        /* 600px */
+        text-align: center;
+        margin-left: 0; }
+  #app-section .download-section {
+    background-color: #D9D9D9;
+    padding: 3.125rem;
+    /* 50px */
+    margin: 1.875rem 0;
+    /* 30px 0 */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #app-section .download-section .download-gif img {
+      width: 50rem;
+      /* 800px */
+      height: 31.25rem;
+      /* 500px */
+      float: left;
+      margin-right: 1.875rem;
+      /* 30px */ }
+    #app-section .download-section .download-content {
+      width: 70%;
+      text-align: center; }
+      #app-section .download-section .download-content p {
+        color: black;
+        font-family: "Aeroport";
+        font-size: 1.25rem;
+        /* 20px */ }
+      #app-section .download-section .download-content .btn-download {
+        display: inline-block;
+        background-color: #2F918F;
+        color: white;
+        font-family: "MarkW01-Heavy";
+        font-size: 1.0625rem;
+        /* 17px */
+        padding: 0.625rem 1.25rem;
+        /* 10px 20px */
+        border-radius: 0.3125rem;
+        /* 5px */
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s; }
+        #app-section .download-section .download-content .btn-download:hover {
+          background-color: #216766; }
+
+.progress-bar {
+  width: calc(100% - 12.5rem);
+  /* 100% - 200px */
+  height: 1.25rem;
+  /* 20px */
+  border-radius: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: black; }
+  .progress-bar .progress {
+    height: 100%;
+    background: linear-gradient(to right, #2F918F, #ff8a00);
+    width: 0%;
+    transition: width 2s ease;
+    animation: progressAnimation 5s infinite; }
+
+@keyframes progressAnimation {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+.section-crea {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 1.875rem 6.25rem;
+  /* 30px 100px */
+  gap: 3.125rem;
+  /* 50px */
+  /* Afficher le contenu par défaut */ }
+  .section-crea .crea-text-section {
+    width: 50%; }
+    .section-crea .crea-text-section h1 {
+      color: #2F918F;
+      font-family: "MarkW01-Heavy";
+      font-size: 1.875rem;
+      /* 30px */
+      margin-bottom: 1.25rem;
+      /* 20px */ }
+    .section-crea .crea-text-section .crea-subtitle {
+      position: relative;
+      margin-bottom: 1.25rem;
+      /* 20px */
+      padding-left: 1.875rem;
+      /* 30px */ }
+      .section-crea .crea-text-section .crea-subtitle h2 {
+        font-family: "MarkW01-Heavy";
+        font-size: 1.5rem;
+        /* 24px */
+        margin-bottom: 0.3125rem;
+        /* 5px */
+        cursor: pointer; }
+      .section-crea .crea-text-section .crea-subtitle p {
+        font-family: "Aeroport";
+        font-size: 1.125rem;
+        /* 18px */
+        display: none; }
+      .section-crea .crea-text-section .crea-subtitle::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0.125rem;
+        /* 2px */
+        height: 60%;
+        background-color: #2F918F; }
+  .section-crea .crea-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .section-crea .crea-image img {
+      width: 100%;
+      height: auto;
+      display: none; }
+  .section-crea .crea-subtitle:first-child h2,
+  .section-crea .crea-subtitle:first-child p {
+    display: block; }
+  .section-crea .crea-image img:first-child {
+    display: block; }
+
+.title-container {
+  text-align: center;
+  margin-bottom: 3.125rem;
+  /* 50px */ }
+
+.media-title {
+  font-family: "MarkW01-Heavy";
+  color: #2F918F;
+  font-size: 1.5rem;
+  /* 24px */ }
+
+.media-subtitle {
+  font-family: "MarkW01-Heavy";
+  color: #2F918F;
+  font-size: 1.25rem;
+  /* 20px */ }
+
+.section-media {
+  padding: 3.125rem 0;
+  /* 50px */
+  margin: 1.875rem 6.25rem; }
+
+.media-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.rectangle-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 1.25rem;
+  /* 20px */
+  flex: 1; }
+
+.rectangle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(45deg, #2F918F, #ff8a00);
+  border: 2px solid black;
+  padding: 1.25rem;
+  /* 20px */
+  margin-bottom: 1.25rem;
+  /* 20px */
+  height: 100%;
+  border-radius: 1.25rem;
+  /* 20px */ }
+
+.rectangle:last-child {
+  margin-bottom: 0; }
+
+.rectangle-image {
+  text-align: center;
+  height: 100%; }
+
+.rectangle-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.25rem;
+  /* 20px */ }
+
+.rectangle-content {
+  text-align: center; }
+
+.ratings {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.625rem;
+  /* 10px */
+  background-color: white;
+  border: none;
+  padding: 0.625rem;
+  /* 10px */ }
+
+.rating-number {
+  font-family: "MarkW01-Heavy";
+  color: #2F918F;
+  margin-right: 0.3125rem;
+  /* 5px */ }
+
+.stars {
+  display: flex;
+  align-items: center; }
+
+.star {
+  display: inline-block;
+  width: 1rem;
+  /* 16px */
+  height: 1rem;
+  /* 16px */
+  color: #2F918F;
+  margin-right: 0.1875rem;
+  /* 3px */ }
+
+.features {
+  display: flex;
+  flex-direction: column;
+  margin: 0.625rem 0 0 0.625rem;
+  /* 10px */ }
+
+.feature {
+  display: inline-block;
+  margin: 0 0.625rem 0.625rem 0;
+  padding: 0.3125rem 0.625rem;
+  /* 5px 10px */
+  border: 1px solid #2F918F;
+  border-radius: 1.25rem;
+  /* 20px */
+  color: #2F918F; }
+
+.rectangle-right {
+  height: calc((200px + 307px) * 2);
+  width: calc(50% - 60px); }
+
+.button-container {
+  text-align: center;
+  margin-top: 3.125rem;
+  /* 50px */ }
+
+.see-more-btn {
+  padding: 0.625rem 1.25rem;
+  /* 10px 20px */
+  font-family: "MarkW01-Heavy";
+  color: #FFFFFF;
+  background-color: #2F918F;
+  border: none;
+  border-radius: 0.3125rem;
+  /* 5px */
+  cursor: pointer;
+  font-size: 1rem;
+  /* 16px */
+  transition: background-color 0.3s ease; }
+
+.see-more-btn:hover {
+  background-color: #216766; }
+
+#app-section .download-section .download-gif img {
+  width: 50rem;
+  height: 31.25rem;
+  float: left;
+  margin-right: 1.875rem; }
+
+.section-comment {
+  background-color: black;
+  padding: 3.125rem;
+  /* 50px */
+  position: relative; }
+  .section-comment .comment-title {
+    font-family: "MarkW01-Heavy";
+    color: #2F918F;
+    font-size: 1.5rem;
+    /* 24px */
+    text-align: center;
+    margin-bottom: 1.875rem;
+    /* 30px */ }
+  .section-comment .comment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; }
+    .section-comment .comment-container .comment {
+      text-align: center;
+      margin-top: 1.25rem;
+      /* 20px */ }
+      .section-comment .comment-container .comment img {
+        width: 6.25rem;
+        /* 100px */
+        height: 6.25rem;
+        /* 100px */
+        border-radius: 50%;
+        object-fit: cover; }
+  .section-comment .arrow-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+    .section-comment .arrow-container.arrow-left {
+      left: 31.25rem;
+      /* 500px */ }
+    .section-comment .arrow-container.arrow-right {
+      right: 31.25rem;
+      /* 500px */ }
+    .section-comment .arrow-container .arrow {
+      width: 3.125rem;
+      /* 50px */
+      height: 3.125rem;
+      /* 50px */
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-comment .arrow-container .arrow:before {
+        content: "\2039";
+        color: black;
+        font-size: 1.875rem;
+        /* 30px */ }
+    .section-comment .arrow-container.arrow-right .arrow:before {
+      content: "\203A"; }
+
+.main-section {
+  background-color: #D9D9D9;
+  border-right: 0.125rem dashed black;
+  /* 2px */
+  border-left: 0.125rem dashed black;
+  /* 2px */
+  padding: 3.125rem 0;
+  /* 50px */
+  margin: 1.875rem 6.25rem;
+  /* 30px */
+  margin-bottom: 0;
+  padding-bottom: 0; }
+  .main-section .text-section {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .main-section .text-section h1 {
+      color: #2F918F;
+      font-family: "Mark W01 Heavy";
+      font-size: 1.875rem;
+      /* 30px */
+      text-align: left;
+      margin-bottom: 1.25rem;
+      /* 20px */ }
+    .main-section .text-section p {
+      font-family: "Aeroport";
+      font-size: 1.25rem;
+      /* 20px */
+      text-align: left;
+      max-width: 37.5rem;
+      /* 600px */ }
+    .main-section .text-section .btn-download {
+      background-color: #2F918F;
+      color: white;
+      border-radius: 0.3125rem;
+      /* 5px */ }
+  .main-section .gif-section {
+    justify-content: flex-end;
+    width: 60%;
+    height: 37.5rem;
+    /* 600px */
+    overflow: hidden; }
+  .main-section .gif-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.platform-section {
+  background-color: #000000;
+  color: #2F918F;
+  text-align: center;
+  padding: 3.125rem 6.25rem;
+  /* 50px 100px */
+  margin: -2.4rem 6.25rem 1.875rem 6.25rem;
+  /* -20px 100px 30px 100px */ }
+  .platform-section .platform-title {
+    margin-top: 0.625rem;
+    /* 10px */
+    font-family: "MarkW01-Heavy"; }
+  .platform-section .platform-logos {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    /* 20px */
+    margin-top: 1.25rem;
+    /* 20px */ }
+    .platform-section .platform-logos img {
+      width: 3.125rem;
+      /* 50px */ }
+
+/* Section FAQS */
+.faq-answer p {
+  font-family: "Aeroport";
+  padding-right: 3.125rem;
+  /* 50px */ }
+
+#section-faq {
+  padding: 3.125rem 6.25rem;
+  /* 50px 100px */
+  text-align: left; }
+  #section-faq h2 {
+    font-family: "MarkW01-Heavy";
+    color: #2F918F;
+    font-size: 1.5rem;
+    /* 24px */
+    margin-bottom: 1.25rem;
+    /* 20px */ }
+
+.faq-item {
+  margin-bottom: 2.5rem;
+  /* 40px */ }
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .faq-question h3 {
+    font-family: "MarkW01-Heavy";
+    color: #000000;
+    font-size: 1.125rem;
+    /* 18px */
+    margin-bottom: 0.625rem;
+    /* 10px */
+    flex: 1; }
+  .faq-question .faq-toggle {
+    background-color: #2F918F;
+    color: white;
+    width: 1.875rem;
+    /* 30px */
+    height: 1.875rem;
+    /* 30px */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.625rem;
+    /* 10px */
+    cursor: pointer; }
+    .faq-question .faq-toggle .faq-toggle-icon {
+      font-size: 1.25rem;
+      /* 20px */ }
+
+.faq-answer {
+  color: #000000;
+  font-family: "Aeroport";
+  font-size: 1rem;
+  /* 16px */
+  display: none; }
+  .faq-answer p {
+    color: black; }
+
+.faq-divider {
+  height: 0.125rem;
+  /* 2px */
+  background-color: black;
+  margin: 1.25rem 0;
+  /* 20px 0 */ }
+
+#section-outdoor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 3.125rem;
+  /* 50px */ }
+
+.blog-square {
+  flex: 1;
+  margin: 0 0.625rem;
+  /* 0 10px */ }
+
+.square-content {
+  height: 18.75rem;
+  /* 300px */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 1.25rem;
+  /* 20px */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease; }
+  .square-content img {
+    width: 9.375rem;
+    /* 150px */
+    height: 9.375rem;
+    /* 150px */
+    margin-bottom: 0.625rem;
+    /* 10px */ }
+  .square-content .square-text {
+    font-family: "Aeroport", sans-serif;
+    font-size: 1rem;
+    /* 16px */
+    line-height: 1.5; }
+  .square-content:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
+
+/* Section Final */
+#section-end {
+  background-color: #2F918F;
+  padding: 6.25rem 0;
+  /* 100px 0 */ }
+
+#section-end .logo {
+  width: 17rem;
+  height: auto; }
+
+#section-end h2 {
+  color: #ffffff;
+  font-family: "MarkW01-Heavy";
+  font-size: 1.875rem;
+  /* 30px */
+  margin: 1.25rem 0;
+  /* 20px 0 */ }
+
+#section-end .cta-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 0.9375rem 1.875rem;
+  /* 15px 30px */
+  font-size: 1.125rem;
+  /* 18px */
+  cursor: pointer;
+  border-radius: 0.3125rem;
+  /* 5px */
+  transition: background-color 0.3s; }
+
+#section-end .cta-button:hover {
+  background-color: #ffffff;
+  color: #000000; }
+
+/* Pied de page */
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 1.25rem;
+  /* 20px */
+  font-family: "Aeroport"; }
+
+.footer-container {
+  margin: 0 6.25rem;
+  /* 100px */
+  font-family: "Aeroport"; }
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.875rem;
+  /* 30px */ }
+
+.footer-section {
+  flex: 1;
+  margin-bottom: 1.25rem;
+  /* 20px */ }
+
+.footer-section h3 {
+  font-size: 1.25rem;
+  /* 20px */
+  font-family: "MarkW01-Heavy";
+  margin-bottom: 0.625rem;
+  /* 10px */
+  text-align: left;
+  cursor: pointer; }
+
+.dropdown-list {
+  display: none;
+  padding: 0; }
+
+.dropdown-list.open {
+  display: block; }
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.footer-section ul li {
+  margin-bottom: 0.3125rem;
+  /* 5px */
+  text-align: left; }
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none; }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid white;
+  padding-top: 1.25rem;
+  /* 20px */ }
+
+/* Barre de navigation */
+.logo {
+  /* À remplacer par le style approprié une fois que le GIF/image est ajouté */
+  height: 2.1875rem;
+  /* 35px */
+  width: 2.1875rem;
+  /* 35px */ }
+
+.divider {
+  margin-left: 0.3125rem;
+  /* 5px */
+  margin-right: 0.3125rem;
+  /* 5px */ }
+
+.brand-name {
+  color: #2F918F;
+  font-family: "MarkW01-Heavy";
+  font-size: 1.0625rem;
+  /* 17px */ }
+
+.navbar {
+  padding-left: 1.25rem;
+  /* 20px */
+  padding-right: 1.25rem;
+  /* 20px */
+  order: 1;
+  border-bottom: 1px solid black; }
+  .navbar .nav-item {
+    margin-left: 0.625rem;
+    /* 10px */
+    margin-right: 0.625rem;
+    /* 10px */ }
+    .navbar .nav-item .nav-link {
+      color: black;
+      font-family: "MarkW01-Heavy";
+      font-size: 0.9375rem;
+      /* 15px */ }
+  .navbar .btn {
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */ }
+    .navbar .btn.btn-download {
+      background-color: #2F918F;
+      color: white; }
+    .navbar .btn.btn-connect {
+      background-color: white;
+      color: black;
+      border-color: black; }
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; }
+
+* {
+  margin-bottom: 1rem; }
+
+section {
+  padding: 20rem; }
+
+.diamond2 {
+  width: 50rem;
+  /* 500px */
+  height: 50rem;
+  /* 500px */
+  margin-top: -30rem;
+  /* -350px */
+  margin-left: 52.4rem;
+  /* 400px */
+  background: #FA8A03;
+  position: absolute;
+  left: 0;
+  transform: rotate(45deg);
+  opacity: 0.5;
+  z-index: -1; }
+
+.diamond3 {
+  margin-right: 40rem;
+  /* 600px */
+  margin-top: 20rem;
+  /* 200px */
+  width: 40rem;
+  /* 500px */
+  height: 40rem;
+  /* 500px */
+  background: #618F6C;
+  position: absolute;
+  right: 0;
+  transform: rotate(45deg);
+  opacity: 0.5;
+  z-index: -1; }
+
+.download-gif {
+  width: 100%;
+  max-width: 50rem; }
+
+.diamond-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#app-section .app-content,
+#app-section .download-section {
+  position: relative; }
+
+/* Ordinateurs Portables */
+@media (min-width: 992px) {
+  /* Section application */
+  #app-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.125rem 0;
+    /* 50px */
+    margin: 1.875rem 3.125rem;
+    /* 30px 50px */
+    margin-bottom: 0; }
+  .app-content {
+    text-align: center;
+    margin-bottom: 1.875rem;
+    /* 30px */ }
+  .app-title {
+    color: #2F918F;
+    font-family: "MarkW01-Heavy";
+    font-size: 1.875rem;
+    /* 30px */
+    margin-bottom: 1.25rem;
+    /* 20px */ }
+  .app-text {
+    color: #000000;
+    font-family: "Aeroport";
+    font-size: 1.25rem;
+    /* 20px */
+    max-width: 37.5rem;
+    /* 600px */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  .app-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px; }
+  .app-button {
+    cursor: pointer;
+    margin: 0 0.625rem;
+    /* 10px */
+    position: relative; }
+  .app-button img {
+    width: 6.25rem;
+    /* 100px */
+    height: auto;
+    transition: opacity 0.3s; }
+  .app-button:hover img {
+    opacity: 0.7; }
+  .app-button::after {
+    content: "";
+    position: absolute;
+    bottom: -0.3125rem;
+    /* -10px */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0.125rem;
+    /* 2px */
+    background-color: #2F918F;
+    transition: width 0.3s; }
+  .app-button:hover::after {
+    width: 2.75rem;
+    /* 44px */ }
+  .download-text-content {
+    text-align: center;
+    margin-left: 3.125rem;
+    /* 50px */ }
+  .download-text-content p {
+    color: black;
+    font-family: "Aeroport";
+    font-size: 1.25rem;
+    /* 20px */ }
+  .btn-download {
+    background-color: #2F918F;
+    color: white;
+    border-radius: 0.3125rem;
+    /* 5px */
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+    border: none;
+    cursor: pointer; }
+  #app-section .download-section .download-gif img {
+    width: 100%;
+    height: auto;
+    padding-right: 0px;
+    float: left; } }
+
+/*Ordinateurs Portables */
+@media (min-width: 992px) {
+  /* Section creation */
+  .section-crea {
+    padding: 0px;
+    box-sizing: border-box; }
+  .crea-text-section,
+  .crea-image {
+    width: 45%; }
+  .crea-text-section h1 {
+    font-size: 1.5rem;
+    /* 24px */ }
+  .crea-subtitle h2 {
+    font-size: 1.25rem;
+    /* 20px */ }
+  .crea-subtitle p {
+    font-size: 1rem;
+    /* 16px */ }
+  .crea-image img {
+    max-width: 80%; } }
+
+/* Ordinateurs Portables */
+@media (min-width: 992px) {
+  /* Section media */
+  .rectangle-content {
+    font-size: 1rem;
+    /* 16px */ }
+  .ratings {
+    margin-top: 0.3125rem;
+    /* 5px */ }
+  .rating-number {
+    font-size: 0.875rem;
+    /* 14px */
+    margin-right: 0.1875rem;
+    /* 3px */ }
+  .stars {
+    display: flex;
+    margin-top: 0.1875rem;
+    /* 3px */ }
+  .star {
+    width: 0.75rem;
+    /* 12px */
+    height: 0.75rem;
+    /* 12px */
+    margin-right: 0.125rem;
+    /* 2px */ }
+  .features {
+    margin-top: 0.625rem;
+    /* 10px */ }
+  .feature {
+    margin-right: 0.3125rem;
+    /* 5px */
+    padding: 0.1875rem 0.375rem;
+    /* 3px 6px */
+    font-size: 0.75rem;
+    /* 12px */ } }
+
+/* CSS pour Ordinateurs Portables */
+@media (min-width: 992px) {
+  /* Section commentaire */
+  .section-comment {
+    background-color: black;
+    padding: 3.125rem;
+    /* 50px */
+    position: relative; }
+  .comment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; }
+  .comment {
+    text-align: center;
+    margin-top: 1.25rem;
+    /* 20px */ }
+  img {
+    width: auto;
+    height: auto; }
+  .arrow-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+  .arrow-container.arrow-left {
+    left: 6.25rem;
+    /* 100px */ }
+  .arrow-container.arrow-right {
+    right: 6.25rem;
+    /* 100px */ }
+  .arrow {
+    width: 2.5rem;
+    /* 40px */
+    height: 2.5rem;
+    /* 40px */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .arrow-left:before {
+    content: "\2039";
+    color: black;
+    font-size: 1.875rem;
+    /* 30px */ }
+  .arrow-right:before {
+    content: "\203A";
+    color: black;
+    font-size: 1.875rem;
+    /* 30px */ } }
+
+/*Ordinateurs Portables */
+@media (min-width: 992px) {
+  /* Section principal */
+  .gif-section img {
+    width: 100%;
+    height: auto; } }
+
+/* Format tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .diamond2 {
+    width: 25rem;
+    height: 25rem;
+    margin-top: -21.875rem;
+    margin-left: 8.75rem; }
+  .diamond3 {
+    margin-right: 8.75rem;
+    margin-top: 18.75rem;
+    width: 25rem;
+    height: 25rem; }
+  body {
+    max-width: 64rem;
+    margin: 0 auto; } }
+
+/* Format tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #app-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.125rem 0;
+    /* 50px */
+    margin: 1.875rem 6.25rem;
+    /* 30px 100px */
+    margin-bottom: 0; }
+  .app-img {
+    max-height: 30rem;
+    /* 100px */
+    /* À remplacer par le style approprié une fois que le GIF/image est ajouté */
+    width: auto; }
+  .app-content {
+    text-align: center;
+    margin-bottom: 1.875rem;
+    /* 30px */ }
+  .app-title {
+    color: #2F918F;
+    font-family: "MarkW01-Heavy";
+    font-size: 1.875rem;
+    /* 30px */
+    margin-bottom: 1.25rem;
+    /* 20px */ }
+  .app-text {
+    color: #000000;
+    font-family: "Aeroport";
+    font-size: 1.25rem;
+    /* 20px */
+    max-width: 37.5rem;
+    /* 600px */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  .app-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0; }
+  .app-button {
+    cursor: pointer;
+    margin: 0 5px;
+    /* 0 5px */
+    position: relative;
+    flex: 0 0 20%;
+    /* 35% */
+    max-width: 10rem;
+    /* 160px */ }
+    .app-button img {
+      width: 4.375rem;
+      /* 70px */
+      height: auto;
+      transition: opacity 0.3s; }
+    .app-button:hover img {
+      opacity: 0.7; }
+    .app-button::after {
+      content: "";
+      position: absolute;
+      bottom: -0.3125rem;
+      /* -5px */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0.0625rem;
+      /* 1px */
+      background-color: #2F918F;
+      transition: width 0.3s; }
+    .app-button:hover::after {
+      width: 1.25rem;
+      /* 20px */ }
+  .btn-download {
+    background-color: #2F918F;
+    color: white;
+    border-radius: 0.3125rem;
+    /* 5px */
+    padding: 1rem 1.875rem;
+    /* 16px 30px */
+    border: none;
+    cursor: pointer;
+    font-family: "Aeroport";
+    font-size: 1.25rem;
+    /* 20px */
+    transition: background-color 0.3s; }
+    .btn-download:hover {
+      background-color: #216766; }
+  .app-section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .app-section .app-gif img {
+      width: 50%;
+      /* 50% */
+      height: auto; }
+    .app-section .app-text-content {
+      text-align: center;
+      margin-left: 0; }
+      .app-section .app-text-content p {
+        color: #000000;
+        font-family: "Aeroport";
+        font-size: 1.25rem;
+        /* 20px */
+        max-width: 37.5rem;
+        /* 600px */
+        text-align: center;
+        margin-left: 0; }
+  .download-section {
+    background-color: #D9D9D9;
+    padding: 3.125rem;
+    /* 50px */
+    margin: 1.875rem 0;
+    /* 30px 0 */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .download-section .download-gif img {
+      width: 50rem;
+      /* 800px */
+      height: 31.25rem;
+      /* 500px */
+      float: left;
+      margin-right: 1.875rem;
+      /* 30px */ }
+    .download-section .download-content {
+      width: 70%;
+      text-align: center; }
+      .download-section .download-content p {
+        color: black;
+        font-family: "Aeroport";
+        font-size: 1.25rem;
+        /* 20px */ }
+      .download-section .download-content .btn-download {
+        display: inline-block;
+        background-color: #2F918F;
+        color: white;
+        font-family: "MarkW01-Heavy";
+        font-size: 17px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s; }
+        .download-section .download-content .btn-download:hover {
+          background-color: #216766; }
+  #app-section .download-section .download-gif img {
+    width: 100%;
+    height: auto;
+    padding-right: 0px;
+    float: none; } }
+
+/* Format tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .progress-bar-container {
+    margin: 0 1.25rem; }
+  .progress-bar {
+    width: calc(100% - 2.5rem); }
+  .gif-section {
+    display: flex;
+    justify-content: center; }
+  .gif-section img {
+    width: 100%;
+    height: auto; }
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+/* Tablettes */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Section creation */
+  .section-crea {
+    padding: 0;
+    box-sizing: border-box; }
+  .crea-text-section,
+  .crea-image {
+    width: 60%; }
+  .crea-text-section h1 {
+    font-size: 1.5rem;
+    /* 24px */ }
+  .crea-subtitle h2 {
+    font-size: 1.25rem;
+    /* 20px */ }
+  .crea-subtitle p {
+    font-size: 1rem;
+    /* 16px */ }
+  .crea-image img {
+    max-width: 80%; } }
+
+/* Format tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Section media */
+  .rectangle-container {
+    flex-direction: column;
+    margin-right: 0;
+    margin-bottom: 1.25rem;
+    /* 20px */ }
+  .rectangle-right {
+    width: 100%; } }
+
+/* Format tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Section commentaire */
+  .section-comment .arrow-container .arrow {
+    width: 2.125rem;
+    height: 2.125rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
+
+/* Format tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-section {
+    margin: 1.875rem 1.25rem 0 1.25rem;
+    margin-bottom: 0px;
+    padding: 3.125rem 1.25rem;
+    padding-bottom: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+/* Format tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .platform-section {
+    padding: 3.125rem 1.25rem;
+    /* 50px 20px */
+    margin: 0 1.25rem 1.875rem 1.25rem;
+    /* 0 20px 30px 20px */ } }
+
+/* Format tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Pied de page */
+  .footer-top {
+    flex-direction: column;
+    align-items: center; }
+  .footer-section {
+    text-align: center; } }
+
+/* Format tablette */
+@media (min-width: 768px) {
+  .navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+    background-color: #2F918F;
+    color: white; }
+  .navigation-bar .logo {
+    font-family: "MarkW01-Heavy";
+    font-size: 1.25rem;
+    /* 20px */ }
+  .navigation-bar .menu-toggle {
+    display: none; }
+  .navigation-bar .menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .navigation-bar .menu-item {
+    margin-left: 1.25rem;
+    /* 20px */ }
+  .navigation-bar .menu-item:first-child {
+    margin-left: 0; }
+  .navigation-bar .menu-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    /* 16px */ } }
+
+/* Format mobile */
+@media (max-width: 767px) {
+  .app-content {
+    flex-direction: column;
+    padding: 3.125rem 5rem;
+    /* 50px 80px */
+    margin-top: -6.25rem;
+    /* -100px */ }
+  .app-button {
+    width: 0.9375rem;
+    /* 15px */
+    height: 0.9375rem;
+    /* 15px */
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0.125rem solid #2F918F;
+    /* 2px */
+    margin: 0.125rem;
+    /* 2px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s; }
+  .app-button:hover {
+    background-color: #2F918F; }
+  .app-button img {
+    display: none; }
+  #app-section .download-section {
+    background-color: #D9D9D9;
+    padding: 3.125rem;
+    margin: -1.25rem;
+    /* -20px */
+    width: 21.875rem;
+    /* 350px */
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .download-section {
+    background-color: #D9D9D9;
+    padding: 0;
+    margin: 1.875rem 0;
+    /* 30px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    /* 400% */ }
+  .download-section:before {
+    content: "";
+    display: block;
+    padding-top: 100%; }
+  .download-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .download-text-content {
+    order: 2;
+    margin-bottom: 0.625rem;
+    /* 10px */ }
+  .app-title,
+  .app-text {
+    text-align: center; }
+  .btn-download {
+    display: block;
+    margin-top: 1.25rem;
+    /* 20px */ }
+  .download-gif img {
+    width: 100%;
+    height: auto; }
+  .download-text-content p {
+    text-align: center; }
+  .btn-download {
+    margin-left: 60px;
+    margin-top: 1.25rem;
+    /* 20px */ }
+  .app-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .app-gif img {
+    width: 100%;
+    height: auto; }
+  .app-text-content {
+    text-align: center;
+    margin-left: 0; }
+    .app-text-content p {
+      color: #000000;
+      font-family: "Aeroport";
+      font-size: 1.25rem;
+      /* 20px */
+      max-width: 37.5rem;
+      /* 600px */
+      text-align: center;
+      margin-left: 0; }
+  #app-section {
+    margin: 0px;
+    padding: 0rem; }
+  .app-content {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem; }
+  #app-section .download-section .download-gif img {
+    width: 100%;
+    height: auto;
+    padding-right: 0px;
+    float: none; }
+  #app-section .app-content .app-text {
+    padding: 0rem 1rem; } }
+
+/* Format mobile */
+@media (max-width: 767px) {
+  .diamond2,
+  .diamond3 {
+    display: none; } }
+
+/* Format mobile */
+@media (max-width: 767px) {
+  .progress-bar-container {
+    margin: 0 1.25rem;
+    /* 20px */ }
+  .progress-bar {
+    width: calc(100% - 2.5rem);
+    /* 40px */ }
+  .download-text-content p {
+    color: black;
+    font-family: "Aeroport";
+    font-size: 1.25rem; }
+  .btn-download {
+    background-color: #2F918F;
+    color: white;
+    border-radius: 0.3125rem;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    cursor: pointer; }
+  .download-text-content {
+    margin-top: 1rem; } }
+
+/* Format mobile */
+@media (max-width: 767px) {
+  #section-faq {
+    padding: 1.875rem;
+    /* 30px */ }
+  #section-faq h2 {
+    font-size: 1.25rem;
+    /* 20px */
+    margin-bottom: 0.9375rem;
+    /* 15px */ }
+  .faq-question h3 {
+    font-size: 1rem;
+    /* 16px */
+    margin-bottom: 0.5rem;
+    /* 8px */ }
+  .faq-question .faq-toggle {
+    width: 1.5rem;
+    /* 24px */
+    height: 1.5rem;
+    /* 24px */
+    margin-left: 0.375rem;
+    /* 6px */ }
+  .faq-question .faq-toggle-icon {
+    font-size: 1rem;
+    /* 16px */ }
+  .faq-answer {
+    font-size: 0.875rem;
+    /* 14px */ }
+  .faq-divider {
+    margin: 0.9375rem 0;
+    /* 15px */ } }
+
+/* Format mobile */
+@media (max-width: 767px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center; }
+  .footer-container {
+    margin: 0; }
+  .footer-section {
+    text-align: center; }
+  .toggle-dropdown {
+    cursor: pointer; }
+  .dropdown-list {
+    display: none; }
+  .toggle-dropdown.open + .dropdown-list {
+    display: block; }
+  .footer-section h3 {
+    font-size: 1rem;
+    /* 16px */
+    font-weight: normal; } }
+
+/* Format mobile */
+@media (max-width: 767px) {
+  #section-outdoor {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.875rem;
+    /* 30px */ }
+  .blog-square {
+    width: 100%;
+    height: 12.5rem;
+    /* 200px */
+    margin: 0.625rem 0;
+    /* 10px */
+    flex-direction: column; }
+    .blog-square .square-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
+
+@media (max-width: 767px) {
+  .main-section {
+    margin: 1.25rem;
+    padding: 1.25rem 0; }
+  .main-section .text-section .btn-download {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 15px; }
+  .main-section .gif-section {
+    width: 100%; }
+  .main-section .gif-section img {
+    height: 100%; }
+  .main-section .gif-section {
+    height: auto; } }
+
+/* Format mobile */
+@media (max-width: 767px) {
+  .platform-section {
+    margin-top: -1.25rem;
+    padding: 3.125rem 1.25rem;
+    margin: 0 1.25rem 1.875rem 1.25rem;
+    order: 4; }
+  .platform-section .platform-logos img {
+    width: 2rem; } }
+
+/* Format mobile */
+@media (max-width: 767px) {
+  .comment-title {
+    margin-bottom: 3.125rem;
+    /* 50px */ }
+  .arrow-container.arrow-left {
+    left: 0.625rem;
+    /* 10px */ }
+  .arrow-container.arrow-right {
+    right: 0.625rem;
+    /* 10px */ }
+  .arrow {
+    width: 1.875rem;
+    /* 30px */
+    height: 1.875rem;
+    /* 30px */ }
+  .arrow-left:before {
+    font-size: 1.25rem;
+    /* 20px */ }
+  .arrow-right:before {
+    font-size: 1.25rem;
+    /* 20px */ }
+  .section-comment {
+    padding: 1.875rem;
+    /* 30px */ }
+  .comment-container {
+    color: white; }
+  img {
+    width: auto;
+    height: auto; }
+  .section-comment .arrow-container.arrow-left {
+    left: 30px;
+    /* 500px */ }
+  .section-comment .arrow-container.arrow-right {
+    right: 30px;
+    /* 500px */ } }
+
+/* Appareils mobiles */
+@media (max-width: 767px) {
+  /* Section creation */
+  .section-crea {
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0; }
+  .crea-text-section {
+    width: 100%;
+    text-align: left;
+    margin-top: 3.125rem;
+    /* 50px */
+    margin-left: 3.125rem;
+    /* 50px */ }
+  .crea-text-section h1 {
+    font-size: 1.25rem;
+    /* 20px */ }
+  .crea-subtitle h2 {
+    font-size: 1rem;
+    /* 16px */ }
+  .crea-subtitle p {
+    font-size: 0.875rem;
+    /* 14px */ }
+  .crea-image {
+    order: 2;
+    margin-top: 1.875rem;
+    /* 30px */
+    margin-left: 0;
+    margin-right: 0; }
+  .crea-image img {
+    margin-top: -3.125rem;
+    /* -50px */
+    margin-bottom: 3.125rem;
+    /* 50px */
+    width: 100%;
+    margin-left: 9.375rem;
+    /* 150px */ } }
+
+/* Format mobile */
+@media (max-width: 767px) {
+  .title-container,
+  .media-container {
+    display: none; }
+  .button-container {
+    text-align: center;
+    margin-top: 1.25rem;
+    /* 20px */ }
+  .section-media {
+    padding: 0;
+    margin: 0.5rem; }
+  .title-container,
+  .media-container {
+    display: block; }
+  .rectangle-container {
+    margin-right: 0; }
+  .rectangle-right {
+    height: auto;
+    width: 100%;
+    margin-top: 1.25rem;
+    /* 20px */ }
+  .features {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .features .feature {
+      font-size: 0.75rem;
+      /* 12px */
+      margin-right: 0.25rem;
+      /* 4px */
+      padding: 0.25rem 0.5rem;
+      background-color: #f5f5f5;
+      border-radius: 0.3125rem;
+      /* 5px */ } }

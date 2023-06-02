@@ -1,0 +1,31 @@
+/* Typography */
+
+$primary-font-family: "Aeroport", sans-serif;
+$secondary-font-family: "MarkW01-Heavy";
+
+$base-font-size: 16px;
+$heading-font-size: 24px;
+
+
+h1 {
+  font-family: $secondary-font-family;
+  font-size: $heading-font-size;
+  font-weight: bold;
+  color: $primary-color;
+}
+
+p {
+  font-family: $primary-font-family;
+  font-size: $base-font-size;
+  color: $black-color;
+}
+
+@font-face {
+  font-family: "Aeroport";
+  src: url('police/Aeroport.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "MarkW01-Heavy";
+  src: url('police/Mark W01 Heavy.ttf') format('truetype');
+}

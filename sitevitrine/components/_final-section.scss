@@ -1,0 +1,41 @@
+/* Section Final */
+
+#section-end {
+  background-color: #2F918F;
+  padding: 6.25rem 0;
+  /* 100px 0 */
+}
+
+#section-end .logo {
+  width: 17rem;
+  height: auto;
+}
+
+
+#section-end h2 {
+  color: #ffffff;
+  font-family: "MarkW01-Heavy";
+  font-size: 1.875rem;
+  /* 30px */
+  margin: 1.25rem 0;
+  /* 20px 0 */
+}
+
+#section-end .cta-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 0.9375rem 1.875rem;
+  /* 15px 30px */
+  font-size: 1.125rem;
+  /* 18px */
+  cursor: pointer;
+  border-radius: 0.3125rem;
+  /* 5px */
+  transition: background-color 0.3s;
+}
+
+#section-end .cta-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}

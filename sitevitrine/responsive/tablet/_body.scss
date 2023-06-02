@@ -1,0 +1,30 @@
+/* Format tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .diamond2 {
+    width: 25rem; 
+    // 400px
+    height: 25rem; 
+    // 400px
+    margin-top: -21.875rem; 
+    // -350px
+    margin-left: 8.75rem; 
+    // 140px
+  }
+
+  .diamond3 {
+    margin-right: 8.75rem; 
+    // 140px
+    margin-top: 18.75rem; 
+    // 300px
+    width: 25rem; 
+    // 400px
+    height: 25rem; 
+    // 400px
+  }
+
+  body {
+    max-width: 64rem; 
+    // 1024px
+    margin: 0 auto;
+  }
+}

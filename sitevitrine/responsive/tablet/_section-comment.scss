@@ -1,0 +1,17 @@
+/* Format tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Section commentaire */
+  .section-comment {
+    .arrow-container {
+      .arrow {
+        width: 2.125rem;
+        height: 2.125rem;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

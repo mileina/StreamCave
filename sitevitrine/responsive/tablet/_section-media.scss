@@ -1,0 +1,15 @@
+/* Format tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Section media */
+  .rectangle-container {
+    flex-direction: column;
+    margin-right: 0;
+    margin-bottom: 1.25rem;
+    /* 20px */
+  }
+
+  .rectangle-right {
+    width: 100%;
+  }
+}

@@ -1,0 +1,58 @@
+/* Format mobile */
+@media (max-width: 767px) {
+    .comment-title {
+        margin-bottom: 3.125rem;
+        /* 50px */
+    }
+
+    .arrow-container.arrow-left {
+        left: 0.625rem;
+        /* 10px */
+    }
+
+    .arrow-container.arrow-right {
+        right: 0.625rem;
+        /* 10px */
+    }
+
+    .arrow {
+        width: 1.875rem;
+        /* 30px */
+        height: 1.875rem;
+        /* 30px */
+    }
+
+    .arrow-left:before {
+        font-size: 1.25rem;
+        /* 20px */
+    }
+
+    .arrow-right:before {
+        font-size: 1.25rem;
+        /* 20px */
+    }
+
+    .section-comment {
+        padding: 1.875rem;
+        /* 30px */
+    }
+
+    .comment-container {
+        color: white;
+    }
+
+    img {
+        width: auto;
+        height: auto;
+    }
+
+    .section-comment .arrow-container.arrow-left {
+        left: 30px;
+        /* 500px */
+    }
+
+    .section-comment .arrow-container.arrow-right {
+        right: 30px;
+        /* 500px */
+    }
+}
