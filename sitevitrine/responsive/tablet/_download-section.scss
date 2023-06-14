@@ -1,26 +1,28 @@
 /* Format tablette */
 @media (min-width: 768px) and (max-width: 1024px) {
   .progress-bar-container {
-    margin: 0 1.25rem; 
-    // 20px
+    margin: 0 1.25rem;
+    /* 20px */
   }
 
   .progress-bar {
-    width: calc(100% - 2.5rem); 
-    // 40px
+    width: calc(100% - 2.5rem);
+    margin-left: 1.22rem;
+    /* 40px */
   }
 
-  .gif-section {
+  .download-section .gif-section {
     display: flex;
     justify-content: center;
+    align-items: center; /* Ajout */
   }
 
-  .gif-section img {
+  .download-section .gif-section img {
     width: 100%;
     height: auto;
   }
 
-  .text-section {
+  .download-section .text-section {
     display: flex;
     flex-direction: column;
     align-items: center;

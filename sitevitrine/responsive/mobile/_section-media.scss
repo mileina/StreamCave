@@ -49,4 +49,9 @@
       /* 5px */
     }
   }
+
+  .section-media .rectangle-right {
+    height: calc((0px + 248px) * 2);
+    width: calc(130% - 60px);
+}
 }

@@ -17,9 +17,7 @@ const appButtons = document.querySelectorAll(".app-button");
 // Sélectionner les éléments de la section de téléchargement
 const downloadGif = document.querySelector(".download-gif img");
 const downloadText = document.querySelector(".download-text-content p");
-const downloadButton = document.querySelector(
-  ".download-text-content .btn-download"
-);
+const downloadButton = document.querySelector(".download-text-content .btn-download");
 
 let isButtonClicked = false; // Drapeau pour indiquer si un bouton a été cliqué
 let appCurrentIndex = 0; // Index du bouton actuel dans la section application
@@ -62,10 +60,17 @@ appButtons.forEach((button, index) => {
       isButtonClicked = false;
     }, 3000);
   });
+
+  button.addEventListener("mouseenter", () => {
+    if (!isButtonClicked) {
+      setActiveButton(index);
+    }
+  });
 });
 
 // Définir l'intervalle pour la transition automatique
-setInterval(goToNextButton, 7000); // Modifier la valeur selon vos besoins
+setInterval(goToNextButton, 7000); 
+
 
 // Section creation
 // Sélection des éléments nécessaires
@@ -226,3 +231,4 @@ dropdownToggles.forEach((toggle) => {
     dropdownList.classList.toggle("open");
   });
 });
+

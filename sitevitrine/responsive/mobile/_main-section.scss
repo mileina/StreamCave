@@ -2,17 +2,16 @@
 @media (max-width: 767px) {
   .main-section {
     margin: 1.25rem; // 20px
+    margin-bottom: 0;
     padding: 1.25rem 0; // 20px 0
   }
 
   .main-section .text-section .btn-download {
-
-    margin: 0;
-    margin-top: 5px;
-    margin-bottom: 15px;
-
+    margin: 5px 0 15px 0; 
+    padding: 0.225rem 0.675rem; 
+    font-size: 0.875rem;
   }
-
+  
   .main-section .gif-section {
     width: 100%;
   }

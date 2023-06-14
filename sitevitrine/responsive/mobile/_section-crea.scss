@@ -15,11 +15,10 @@
     .crea-text-section {
         width: 100%;
         text-align: left;
-        margin-top: 3.125rem;
-        /* 50px */
-        margin-left: 3.125rem;
-        /* 50px */
-    }
+        margin: 3.125rem 3.125rem 0;
+        /* 50px 50px 0 */
+      }
+      
 
     .crea-text-section h1 {
         font-size: 1.25rem;
@@ -38,19 +37,15 @@
 
     .crea-image {
         order: 2;
-        margin-top: 1.875rem;
-        /* 30px */
-        margin-left: 0;
-        margin-right: 0;
-    }
+        margin: 1.875rem 0 0;
+        margin-left: 5rem;
+        /* 30px 0 0 */
+      }
+      
 
-    .crea-image img {
-        margin-top: -3.125rem;
-        /* -50px */
-        margin-bottom: 3.125rem;
-        /* 50px */
+      .crea-image img {
+        margin: -3.125rem 9.375rem 3.125rem;
+        /* -50px 150px 50px */
         width: 100%;
-        margin-left: 9.375rem;
-        /* 150px */
-    }
+      }      
 }

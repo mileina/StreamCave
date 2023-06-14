@@ -1,3 +1,5 @@
+/* Body */
+
 body {
   margin: 0;
   padding: 0;
@@ -5,9 +7,14 @@ body {
   overflow-x: hidden;
 }
 
-* {
+header,
+nav,
+aside,
+section,
+article {
   margin-bottom: 1rem;
 }
+
 
 section {
   padding: 20rem;
@@ -15,13 +22,8 @@ section {
 
 .diamond2 {
   width: 50rem;
-  /* 500px */
   height: 50rem;
-  /* 500px */
-  margin-top: -30rem;
-  /* -350px */
-  margin-left: 52.4rem;
-  /* 400px */
+  margin: -30rem 0 0 52.4rem;
   background: #FA8A03;
   position: absolute;
   left: 0;
@@ -30,15 +32,11 @@ section {
   z-index: -1;
 }
 
+
 .diamond3 {
-  margin-right: 40rem;
-  /* 600px */
-  margin-top: 20rem;
-  /* 200px */
+  margin: 20rem 40rem 0 0;
   width: 40rem;
-  /* 500px */
   height: 40rem;
-  /* 500px */
   background: #618F6C;
   position: absolute;
   right: 0;
@@ -46,6 +44,7 @@ section {
   opacity: 0.5;
   z-index: -1;
 }
+
 
 .download-gif {
   width: 100%;

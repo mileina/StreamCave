@@ -1,61 +1,55 @@
+/* Main Section */
+
 .main-section {
-  background-color: #D9D9D9;
+  background: linear-gradient(to bottom, #D9D9D9, #FFFFFF);
   border-right: 0.125rem dashed black;
-  /* 2px */
   border-left: 0.125rem dashed black;
-  /* 2px */
-  padding: 3.125rem 0;
-  /* 50px */
-  margin: 1.875rem 6.25rem;
-  /* 30px */
-  margin-bottom: 0;
-  padding-bottom: 0;
+  padding: 5rem 0 0;
+  margin-top: -2rem;
+  /* margin: 1.875rem 6.25rem 0; */
+}
 
-  .text-section {
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
 
-    h1 {
-      color: #2F918F;
-      font-family: "Mark W01 Heavy";
-      font-size: 1.875rem;
-      /* 30px */
-      text-align: left;
-      margin-bottom: 1.25rem;
-      /* 20px */
-    }
+.main-section .text-section {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 
-    p {
-      font-family: "Aeroport";
-      font-size: 1.25rem;
-      /* 20px */
-      text-align: left;
-      max-width: 37.5rem;
-      /* 600px */
-    }
+.main-section .text-section h1 {
+  color: #2F918F;
+  font-family: "Lato";
+  font-size: 2.875rem;
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
 
-    .btn-download {
-      background-color: #2F918F;
-      color: white;
-      border-radius: 0.3125rem;
-      /* 5px */
-    }
-  }
+.main-section .text-section p {
+  font-family: "poppins";
+  font-size: 1.25rem;
+  text-align: left;
+  max-width: 37.5rem;
+}
 
-  .gif-section {
-    justify-content: flex-end;
-    width: 60%;
-    height: 37.5rem;
-    /* 600px */
-    overflow: hidden;
-  }
+.main-section .text-section .btn-download {
+  background-color: #2F918F;
+  color: white;
+  border-radius: 0.3125rem;
+  padding: 1.25rem 2.5rem; 
+  font-size: 1.5rem; 
+}
 
-  .gif-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.main-section .gif-section {
+  justify-content: flex-end;
+  width: 60%;
+  height: 37.5rem;
+  overflow: hidden;
+}
+
+.main-section .gif-section img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
 }

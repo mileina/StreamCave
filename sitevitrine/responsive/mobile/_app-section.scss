@@ -9,6 +9,8 @@
     }
 
     .app-button {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
         width: 0.9375rem;
         /* 15px */
         height: 0.9375rem;
@@ -98,11 +100,9 @@
     }
 
     .btn-download {
-        margin-left: 60px;
-        margin-top: 1.25rem;
-        /* 20px */
-    }
-
+        margin: 1.25rem 0 0 60px; 
+      }
+      
     .app-section {
         display: flex;
         flex-direction: column;
@@ -138,10 +138,9 @@
 
     .app-content {
         margin: 0;
-        padding: 0;
-        padding-bottom: 1rem;
-    }
-
+        padding: 0 0 1rem; 
+      }
+      
     #app-section .download-section .download-gif img {
         width: 100%;
         height: auto;
@@ -152,5 +151,10 @@
 
     #app-section .app-content .app-text {
         padding: 0rem 1rem;
+    }
+
+    #app-section .app-content .app-text 
+    {
+        margin-bottom: 2rem;
     }
 }

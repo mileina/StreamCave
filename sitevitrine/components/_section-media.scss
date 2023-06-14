@@ -1,144 +1,147 @@
+/* Media Section */
+
 .title-container {
     text-align: center;
-    margin-bottom: 3.125rem; /* 50px */
-}
-
-.media-title {
+    margin-bottom: 3.125rem;
+  }
+  
+  .title-container .media-title {
     font-family: "MarkW01-Heavy";
     color: #2F918F;
-    font-size: 1.5rem; /* 24px */
-}
-
-.media-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .title-container .media-subtitle {
     font-family: "MarkW01-Heavy";
     color: #2F918F;
-    font-size: 1.25rem; /* 20px */
-}
-
-.section-media {
-    padding: 3.125rem 0; /* 50px */
+    font-size: 1.25rem;
+  }
+  
+  .section-media {
+    padding: 3.125rem 0;
     margin: 1.875rem 6.25rem;
-}
-
-.media-container {
+  }
+  
+  .section-media .media-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-}
-
-.rectangle-container {
+  }
+  
+  .section-media .rectangle-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 1.25rem; /* 20px */
+    margin-right: 1.25rem;
     flex: 1;
-}
-
-.rectangle {
+  }
+  
+  .section-media .rectangle {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background: linear-gradient(45deg, #2F918F, #ff8a00);
     border: 2px solid black;
-    padding: 1.25rem; /* 20px */
-    margin-bottom: 1.25rem; /* 20px */
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
     height: 100%;
-    border-radius: 1.25rem; /* 20px */
-}
-
-.rectangle:last-child {
+    border-radius: 1.25rem;
+  }
+  
+  .section-media .rectangle:last-child {
     margin-bottom: 0;
-}
-
-.rectangle-image {
+  }
+  
+  .section-media .rectangle .rectangle-image {
     text-align: center;
     height: 100%;
-}
-
-.rectangle-img {
+  }
+  
+  .section-media .rectangle .rectangle-img {
     width: 100%;
     height: auto;
-    border-radius: 1.25rem; /* 20px */
-}
-
-.rectangle-content {
+    border-radius: 1.25rem;
+  }
+  
+  .section-media .rectangle .rectangle-content {
     text-align: center;
-}
-
-.ratings {
+  }
+  
+  .section-media .rectangle .ratings {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.625rem; /* 10px */
+    border-radius: 0.625rem;
     background-color: white;
     border: none;
-    padding: 0.625rem; /* 10px */
-}
-
-.rating-number {
+    padding: 0.625rem;
+  }
+  
+  .section-media .rectangle .rating-number {
     font-family: "MarkW01-Heavy";
     color: #2F918F;
-    margin-right: 0.3125rem; /* 5px */
-}
-
-.stars {
+    margin-right: 0.3125rem;
+  }
+  
+  .section-media .rectangle .stars {
     display: flex;
     align-items: center;
-}
-
-.star {
+  }
+  
+  .section-media .rectangle .star {
     display: inline-block;
-    width: 1rem; /* 16px */
-    height: 1rem; /* 16px */
+    width: 1rem;
+    height: 1rem;
     color: #2F918F;
-    margin-right: 0.1875rem; /* 3px */
-}
-
-.features {
+    margin-right: 0.1875rem;
+  }
+  
+  .section-media .rectangle .features {
     display: flex;
     flex-direction: column;
-    margin: 0.625rem 0 0 0.625rem; /* 10px */
-}
-
-.feature {
+    margin: 0.625rem 0 0 0.625rem;
+  }
+  
+  .section-media .rectangle .feature {
     display: inline-block;
     margin: 0 0.625rem 0.625rem 0;
-    padding: 0.3125rem 0.625rem; /* 5px 10px */
+    padding: 0.3125rem 0.625rem;
     border: 1px solid #2F918F;
-    border-radius: 1.25rem; /* 20px */
+    border-radius: 1.25rem;
     color: #2F918F;
-}
-
-.rectangle-right {
-    height: calc((200px + 307px) * 2); 
-    width: calc(50% - 60px); 
-}
-
-.button-container {
+  }
+  
+  .section-media .rectangle-right {
+    height: calc((200px + 248px) * 2);
+    width: calc(50% - 60px);
+  }
+  
+  .section-media .button-container {
     text-align: center;
-    margin-top: 3.125rem; /* 50px */
-}
-
-.see-more-btn {
-    padding: 0.625rem 1.25rem; /* 10px 20px */
+    margin-top: 3.125rem;
+  }
+  
+  .section-media .see-more-btn {
+    padding: 0.625rem 1.25rem;
     font-family: "MarkW01-Heavy";
     color: #FFFFFF;
     background-color: #2F918F;
     border: none;
-    border-radius: 0.3125rem; /* 5px */
+    border-radius: 0.3125rem;
     cursor: pointer;
-    font-size: 1rem; /* 16px */
+    font-size: 1rem;
     transition: background-color 0.3s ease;
-}
-
-.see-more-btn:hover {
+  }
+  
+  .section-media .see-more-btn:hover {
     background-color: #216766;
-}
-
-#app-section .download-section .download-gif img {
+  }
+  
+  #app-section .download-section .download-gif img {
     width: 50rem;
     height: 31.25rem;
     float: left;
     margin-right: 1.875rem;
-}
+  }
+  

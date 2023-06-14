@@ -1,48 +1,51 @@
-/* CSS pour la barre de navigation sur mobile */
+// CSS pour la barre de navigation sur mobile
 @media (max-width: 767px) {
     .navigation-bar {
-        padding: 10px;
-        background-color: #2F918F;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo {
+      padding: 10px;
+      background-color: #2F918F;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .logo {
         color: white;
         font-size: 20px;
         font-weight: bold;
         text-decoration: none;
-    }
-
-    .menu-toggle {
+      }
+  
+      .menu-toggle {
         color: white;
         font-size: 20px;
         cursor: pointer;
-    }
-
-    .menu {
+      }
+  
+      .menu {
         display: none;
-    }
-
-    .menu-item {
+      }
+  
+      .menu-item {
         margin: 10px 0;
-    }
-
-    .menu-item a {
-        color: white;
-        text-decoration: none;
-    }
-
-    .menu-item a:hover {
-        text-decoration: underline;
-    }
-
-    .menu-toggle.open~.menu {
+  
+        a {
+          color: white;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+  
+      .menu-toggle.open ~ .menu {
         display: block;
+      }
+  
+      .navbar .nav-item .nav-link {
+        width: 100%;
+        margin-left: auto;
     }
-
-    .navbar .btn.btn-download {
-        margin-bottom: 15px;
+      }
     }
-}
+  
+  

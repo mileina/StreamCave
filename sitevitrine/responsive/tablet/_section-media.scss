@@ -12,4 +12,8 @@
   .rectangle-right {
     width: 100%;
   }
+  .section-media .rectangle-right {
+    height: calc((0px + 248px) * 2);
+    width: calc(107% - 60px);
+}
 }

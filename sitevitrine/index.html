@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" id="html-lang">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,6 +8,9 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
@@ -43,8 +46,8 @@
             <a class="nav-link" href="#">Ressources</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-download" href="#">Télécharger</a>
-          </li>
+            <a class="nav-link btn btn-download download-link" href="#">Télécharger</a>
+          </li>          
           <li class="nav-item">
             <a class="nav-link btn btn-connect" href="#">Se connecter</a>
           </li>
@@ -57,7 +60,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 text-section">
-            <h1>Une plateforme pour les créateurs</h1>
+            <h1>Une plateforme <br> pour les <br> créateurs</h1>
             <p>
               Nous offrons une suite d'outils pour vous aider à diffuser vos
               créations en ligne. Rejoignez-nous et faites partie de notre
@@ -84,12 +87,12 @@
           S'intègre aux plateformes les plus populaires
         </h2>
         <div class="platform-logos">
-          <img src="image/twitch.png" alt="Logo Twitch" />
-          <img src="image/youtube.png" alt="Logo YouTube" />
-          <img src="image/facebook.png" alt="Logo Facebook" />
-          <img src="image/insta.png" alt="Logo Instagram" />
-          <img src="image/tiktok.png" alt="Logo Tiktok" />
-        </div>
+          <i class="fab fa-twitch" style="color: #a441f7;"></i>
+          <i class="fa-brands fa-youtube fa-bounce" style="color: #ff0000;"></i>
+          <i class="fab fa-facebook" style="color: #1873eb;"></i>
+          <i class="fab fa-instagram fa-bounce" style="color: #cc2e8b;"></i>
+          <i class="fab fa-tiktok"></i>
+        </div>        
       </div>
       <div class="diamond-container">
         <div class="diamond3"></div>
@@ -110,11 +113,11 @@
         </p>
         <div class="app-buttons">
           <div
-            class="app-button"
-            data-text="Texte associé au premier bouton."
-            data-gif
-            cl="image/app1.gif"
-            data-download="lien1"
+          class="app-button"
+          data-text="Texte associé au premier bouton."
+          data-gif="image/app1.gif"
+          class="image/app1.gif"
+          data-download="lien1"
           >
             <img src="image/bouton1.png" alt="button1" />
           </div>
@@ -417,53 +420,38 @@
       </div>
     </section>
 
-    <!-- pied de -->
     <footer id="Section-Footer">
       <div class="footer-container">
         <div class="footer-top">
           <div class="footer-section toggle-dropdown">
             <h3 class="dropdown-toggle">Suivez-nous</h3>
-            <ul class="dropdown-list">
+            <ul class="dropdown-list open">
               <li>
-                <a href="#"
-                  ><img src="chemin_vers_icon_twitter" alt="Twitter"
-                /></a>
+                <a href="#"><img src="chemin_vers_icon_twitter" alt="Twitter" /></a>
               </li>
               <li>
-                <a href="#"
-                  ><img src="chemin_vers_icon_youtube" alt="YouTube"
-                /></a>
+                <a href="#"><img src="chemin_vers_icon_youtube" alt="YouTube" /></a>
               </li>
               <li>
-                <a href="#"
-                  ><img src="chemin_vers_icon_instagram" alt="Instagram"
-                /></a>
+                <a href="#"><img src="chemin_vers_icon_instagram" alt="Instagram" /></a>
               </li>
               <li>
-                <a href="#"
-                  ><img src="chemin_vers_icon_tiktok" alt="TikTok"
-                /></a>
+                <a href="#"><img src="chemin_vers_icon_tiktok" alt="TikTok" /></a>
               </li>
               <li>
-                <a href="#"
-                  ><img src="chemin_vers_icon_facebook" alt="Facebook"
-                /></a>
+                <a href="#"><img src="chemin_vers_icon_facebook" alt="Facebook" /></a>
               </li>
               <li>
-                <a href="#"
-                  ><img src="chemin_vers_icon_linkedin" alt="LinkedIn"
-                /></a>
+                <a href="#"><img src="chemin_vers_icon_linkedin" alt="LinkedIn" /></a>
               </li>
               <li>
-                <a href="#"
-                  ><img src="chemin_vers_icon_twitch" alt="Twitch"
-                /></a>
+                <a href="#"><img src="chemin_vers_icon_twitch" alt="Twitch" /></a>
               </li>
             </ul>
           </div>
           <div class="footer-section toggle-dropdown">
             <h3 class="dropdown-toggle">Top produits</h3>
-            <ul class="dropdown-list">
+            <ul class="dropdown-list open">
               <li><a href="#">Lorem</a></li>
               <li><a href="#">Lorem</a></li>
               <li><a href="#">Lorem</a></li>
@@ -473,7 +461,7 @@
           </div>
           <div class="footer-section toggle-dropdown">
             <h3 class="dropdown-toggle">Stream Cave</h3>
-            <ul class="dropdown-list">
+            <ul class="dropdown-list open">
               <li><a href="#">À propos</a></li>
               <li><a href="#">Nouvelles</a></li>
               <li><a href="#">Emplacements</a></li>
@@ -483,7 +471,7 @@
           </div>
           <div class="footer-section toggle-dropdown">
             <h3 class="dropdown-toggle">Assistance</h3>
-            <ul class="dropdown-list">
+            <ul class="dropdown-list open">
               <li><a href="#">Support technique</a></li>
               <li><a href="#">Joindre notre équipe</a></li>
               <li><a href="#">Mentions légales</a></li>
@@ -494,19 +482,20 @@
           <div class="bottom-section">
             <p>© StreamCave. Tous droits réservés.</p>
             <div class="language-selector">
-              <select>
+              <select id="language-select">
                 <option value="fr">Français</option>
                 <option value="en">Anglais</option>
                 <option value="es">Espagnol</option>
                 <option value="de">Allemand</option>
                 <option value="cn">Chinois</option>
               </select>
-            </div>
+            </div>            
           </div>
         </div>
       </div>
     </footer>
-
+    
+    <script src="https://kit.fontawesome.com/75a4a0fecd.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="script.js"></script>

@@ -6,12 +6,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3.125rem 0;
-    /* 50px */
-    margin: 1.875rem 3.125rem;
-    /* 30px 50px */
-    margin-bottom: 0;
+    padding: 3.125rem 0; /* 50px */
+    margin: 1.875rem 3.125rem 0; /* 30px 50px 0 */
   }
+  
 
   .app-content {
     text-align: center;
@@ -31,15 +29,12 @@
   .app-text {
     color: #000000;
     font-family: "Aeroport";
-    font-size: 1.25rem;
-    /* 20px */
-    max-width: 37.5rem;
-    /* 600px */
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.25rem; /* 20px */
+    max-width: 37.5rem; /* 600px */
+    margin: 0 auto; /* 0 top/bottom, auto left/right */
     text-align: center;
   }
-
+  
   .app-buttons {
     display: flex;
     justify-content: center;
@@ -114,4 +109,13 @@
     padding-right: 0px;
     float: left;
   }
+  .progress-bar .progress {
+    height: 100%;
+    background: linear-gradient(to right, #2F918F, #ff8a00);
+    width: 0%;
+    transition: width 2s ease;
+    animation: progressAnimation 5s infinite;
+    margin: 0 auto;
+  }
+  
 }

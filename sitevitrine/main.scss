@@ -46,6 +46,23 @@
 @import 'responsive/mobile/_section-crea';
 @import 'responsive/mobile/_section-media';
 
-// Police
-@import 'police/Mark\ W01\ Heavy.ttf';
-@import 'police/Aeroport.otf';
+/* Police */
+@font-face {
+    font-family: "MarkW01-Heavy";
+    src: url("file:///C:/Users/meas_/Documents/streamcave/streamcave2/streamcave/sitevitrine/police/mark_w01.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Aeroport";
+    src: url("file:///C:/Users/meas_/Documents/streamcave/streamcave2/streamcave/sitevitrine/police/aeroport.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Lato";
+    src: url("file:///C:/Users/meas_/Documents/streamcave/streamcave2/streamcave/sitevitrine/police/lato.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("police/poppins.woff") format("woff");
+  }
